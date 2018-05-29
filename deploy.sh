@@ -14,6 +14,6 @@ DATE=`date '+%Y-%m-%d--%H-%M-%S'`
 tar czf release-$DATE-$GIT_COMMIT.gz demo.py templates/
 
 
-cd /home/gabor/work/demo-flask-project;
-/usr/bin/git pull
+cd /home/adam/src/demo-flask-project
+git pull
 sudo /usr/sbin/service uwsgi reload
