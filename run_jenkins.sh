@@ -1,7 +1,7 @@
 #!/bin/bash
 
-virtualenv venv
+python -m virtualenv venv
 source venv/bin/activate
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 pytest --junitxml=test-results/$BUILD_NUMBER.xml
 
